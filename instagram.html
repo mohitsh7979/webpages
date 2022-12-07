@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <style>
+        .cont{
+             border: 2px solid black;
+             position: absolute;
+             margin-left: 600px;
+             margin-top: 250px;
+             padding-top: 10px;
+            padding-bottom: 10px;
+            
+             
+      }
+      .a{
+        margin: 4px 4px;
+        padding: 4px 4px;
+    
+        
+      }
+      .b{
+           
+           margin: 4px 4px;
+           padding: 4px 4px ;
+           width: 250px;
+      }
+      .c{
+          margin-left: 16px;
+          
+        }
+        .d{
+          width: 260px;
+          height: 25px;
+          background-color:#528edc;
+          border: none;
+          color: white;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          border-radius: 4px;
+
+
+      }
+      .img{
+        margin-left: 60px;
+      }
+
+      .new{
+        border: 2px solid black;
+        display: inline;
+        position: absolute;
+        margin-left: 600px;
+        margin-top: 499px;
+        width: 290px;
+        height: 30px;
+      }
+      .sign{
+             margin: 5px 20px ;
+             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+      .pass{
+             margin-left: 90px;
+             text-decoration: none;
+             color: black;
+             
+      }
+      hr a{
+           text-decoration: none;
+      }
+      .sign a{
+              text-decoration: none;
+      }
+      .d:hover{
+                 cursor: pointer;
+      }
+    </style>
+    <script>
+
+     function verifypassword(){
+        var pwd=document.getElementById("password").value;
+        if(pwd=="")
+        {
+          document.getElementById("message").innerHTML="please fill the passworrd"
+        }
+        if(pwd.length<8)
+        {
+          document.getElementById("message").innerHTML="Password length must be atleast 8 character"
+        }
+
+
+
+     }
+      
+         
+    </script>
+</head>
+<body>
+    <form action="post" onsubmit="return verifypassword()">
+        <div class="cont">
+        <img src="7a252de00b20.png"class="img">
+        <div class="a">
+            <input type="value" placeholder="username" class="b">
+        </div>
+       
+        <div class="a" >
+            <input type="value" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" class="b" id="password" value=""><span id="message"style="color-red"></span><br><br>
+        </div>
+        <div class="c">
+            <button class="d">Log In</button> 
+        </div>
+        <div>
+            <hr><a href="" class="pass">Forget Password</a>
+             
+        </div>
+    </div>
+    </form>
+    <div class="new">
+       <p class="sign"> Dont have an account?<a href="">Sign up</a></p>
+    </div>
+</body>
+</html>

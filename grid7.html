@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grid</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-columns: repeat(auto-fit , minmax(400px,0.5fr));;
+
+
+
+
+        }
+
+        .item {
+            border: 2px solid black;
+            background-color: salmon;
+
+        }
+
+        #navbar {
+            grid-column-start: 1;
+            grid-column-end: 4;
+
+            padding: 50px;
+            text-align: center;
+        }
+
+        #section {
+            grid-row-start: 2;
+            grid-row-end: 50;
+        }
+
+        #aside {
+            grid-row-start: 2;
+            grid-row-end: 50;
+            grid-column-start: 2;
+            grid-column-end: 4;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            <h1>Mohit Sharma</h1>
+        </div>
+        <div id="section" class="item">
+            <ul>Image
+                <li></li>
+            </ul>
+            <ul>D.O.B :
+                <li></li>
+            </ul>
+            <ul>Address :
+                <li></li>
+            </ul>
+            <ul>Father Name :
+                <li></li>
+            </ul>
+            <ul>Mobile No :
+                <li></li>
+            </ul>
+            <ul>Email id :
+                <li></li>
+            </ul>
+        </div>
+        <div id="aside" class="item">
+            <ul>Objective :<li></li>
+            </ul>
+            <ul>Experience :<li></li>
+            </ul>
+            <ul>Skills :<li></li>
+            </ul>
+            <ul>Interst :<li></li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+
+</html>

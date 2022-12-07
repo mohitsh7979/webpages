@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+         body{
+            background-color: white;
+            overflow-x: hidden;
+            
+      }
+      header{
+        position: fixed;
+        top:0; left: 0;
+        z-index: 1000;
+        height: 100%;
+        width: 35rem;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+        text-align: center;
+        
+       
+      }
+       
+      .home{
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+        
+       
+       
+        
+      }
+
+      .home h3 {
+        font-size: 2rem;
+        color: black;
+      }
+
+      .home h1 {
+        font-size: 3rem;
+        color: black;
+      }
+
+      .home p{
+        font-size: 1.5rem;
+        color: black;
+        padding: 0px;
+      }
+
+      section{
+        margin-top: 100px;
+        min-height: 1000px;
+        /* padding: 1rem; */
+        margin-left: 700px;
+        
+        
+       
+      }
+
+      .btn{
+           
+        padding: 20px 20px  ;
+        background-color: #333;
+        color: #fff;
+        cursor: pointer;
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        border-radius: 30px;
+
+      }
+
+      .heading{
+        text-align: center;
+        /* margin:0 6rem; */
+        width: 90%;
+        margin-right: 80px;
+        margin-left: -1px;
+        font-size: 2.5rem;
+        padding: 0.5rem;
+        border: 2px solid black;
+        border-radius: 50px;
+        background-color: #333;
+        color: #fff;
+       
+        /* border-radius: .1rem solid #fff4; */
+        
+      
+      }
+
+      .about .row{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0.5rem 0;
+      }
+
+      .about .row .info{
+        flex:1 1 48rem;
+        /* padding: 1rem 0.5rem; */
+        padding-left: 2rem;
+      }
+
+      .about .row .info h3{
+        /* font-family: 'Courier New', Courier, monospace; */
+        font-size: 1.5rem;
+        padding: 1rem 0;
+        font-weight: normal;
+      }
+
+      .about .row .counter{
+        flex: 1 1 48rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .education .box-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0.5rem 0;
+        padding-left: 3rem;
+      }
+
+      .education .box-container .box{
+        width: 27rem;
+        margin: 4rem 1rem;
+        padding-left: 4rem;
+        border-left: .2rem solid #fff;
+        position: relative;
+      }
+
+      .education .box-container .box span{
+        font-size: 2rem;
+        background-color: #222;
+        color: #fff;
+        border: 2px solid black;
+        /* border-radius: 2rem; */
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+
+      .education .box-container .box h3 {
+        font-size: 1.5rem;
+       
+        padding-top: 1.5rem;
+
+      }
+      .education .box-container .box p {
+        font-size: 1.4rem;
+     
+        padding-top: 1rem 0;
+        
+      }
+
+      .education .box-container .box i{
+        position: absolute;
+        top:-1.5rem; left:-2.5rem;
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+        line-height: 5rem;
+        text-align: center;
+        font-size: 2rem;
+        color: black;
+      }
+
+      .contactrow{
+        /* display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap; */
+       margin-top: 50px;
+        
+      }
+
+      .contactcontent{
+        font-size: 20px;
+    
+      
+      }
+
+       form{
+        /* flex:1 1 20rem; */
+        padding: 0.5rem;
+        margin: 0.5rem;
+        margin-bottom: 2rem;
+        margin-top: 50px;
+        margin-right: 100px;
+      
+      }
+      .btn1{
+        padding: 20px 20px  ;
+        background-color: #333;
+        color: #fff;
+        cursor: pointer;
+        margin-top: 1rem;
+        margin-left: 70px;
+        font-size: 1rem;
+        border-radius: 30px;
+      }
+
+      .box1{
+        padding: 1rem;
+        
+        margin-left: 70px;
+        margin-bottom: 10px;
+        background: #333;
+        color: #fff;
+        text-transform: none;
+        font-size: 1rem;
+        width: 70%;
+        border-radius: 10px;
+      }
+      .box2{
+        padding: 1rem;
+        margin-left: 70px;
+        background: #333;
+        color: #fff;
+        text-transform: none;
+        font-size: 1rem;
+        border-radius: 10px;
+        width: 70%;
+      }
+
+      #message{
+        height: 15rem;
+     
+        resize: none;
+      }
+
+      .contact .row .content .title{
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 3rem;
+        padding-bottom: 2rem;
+      }
+
+      .contact .row .content .info h3 {
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+        color: #eee;
+        padding: 1rem;
+        
+      }
+
+      header .navbar ul li a{
+        display: block;
+        padding: 0.8rem;
+        margin: 1.5rem 0;
+        background-color: #333;
+        color: #fff;
+        font-size: 1.5rem;
+        border-radius: 5rem;
+      }
+      
+      header .navbar{
+        margin-bottom: 50px;
+        width: 85%;
+      }
+
+      header .navbar ul{
+        list-style: none;
+        padding: 0.5rem 2rem;
+      }
+     
+      header .navbar ul li a{
+        text-decoration: none;
+      }
+
+      header .myclass img{
+        margin-top: 70px;
+        height: 10rem;
+        width: 10rem;
+        border: 8px solid yellow;
+        border-radius: 50%;
+        object-fit: cover;
+        
+        
+      }
+
+      .newdiv{
+        display: flex;
+      }
+
+      .myclass{
+        margin-top: 10px;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="myclass">
+            <img src="https://sp-ao.shortpixel.ai/client/to_auto,q_lossy,ret_img,w_48,h_48/https://uvik.net/wp-content/uploads/2022/05/1580915563811.jpg" alt="">   
+            <h1 class="myname" style="color:white; margin-top: 10px;">Mohit Sharma</h1>
+            <h4 class="post" style="color: wheat; font-size: 20px;"> Django Developer</h4>
+            
+        </div>
+
+        <nav class="navbar">
+            <ul>
+               <li><a href="#home">Home</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#education">Education</a></li>
+               <!-- <li><a href ="#project">Project</a></li> -->
+               <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <h3>HI THERE !</h3>
+        <h1>I'M<span> Mohit Sharma <i class="fa-brands fa-searchengin"></i> <i class="fa-brands fa-youtube"></i></span></h1>
+        <p>I am belongs to jaipur. i have passed my 12th RBSC Borad.currently i am pursuing my bca from rajesthan university and i am also doing my internship from Regex software service in python Django and here i have worked on multiple projects and currently i am pushing myself for upgrading my skills</p>
+        <a href="#about"><button class="btn">About me <i class="fas fa-user"></i></button></a>
+    </section>
+
+    <section class="about" id="about">
+         <h1 class="heading"><span>About</span> me</h1>
+         <div class="row">
+            <div class="info">
+                <h3><span>Name :</span>Mohit Sharma</h3>
+                <h3><span> Age :</span>18</h3>
+                <h3><span>Qualification :</span>BTEACC</h3>
+                <h3><span>Post :</span>Django Developer</h3>
+                <h3><span>Project :</span>E-commerce Website (Django)</h3>
+                <h3><span>Language :</span> Hindi and English</h3>
+              
+                <a href="#"><button type="btn" class="btn">Download CV <i class="fa-solid fa-arrow-down-long"></i></button></a>
+            </div>
+                
+            <!-- <div class="counter">
+                  <div class="box">
+                    <span>Fresher</span>
+                  </div>
+                  <div class="box">
+                    <span>2</span>
+                    <h3>Project Completed</h3>
+                  </div>
+
+            </div> -->
+
+         </div>
+
+    </section>
+       
+
+    <section class="education" id="education">
+        <h1 class="heading"> My <span>Education</span> </h1>
+
+        <div class="box-container">
+            <div class="box">
+               <i class="fas fa-graduation-cap"></i>
+               <span>2018</span>
+               <h3>10th RBSC BORAD</h3>
+               <p>I have Passed my 10th class from Jai Durga Senior Secondary School</p>
+               
+            </div>
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2020</span>
+                <h3>12th RBSC BORAD</h3>
+                <p>I have passed my 12th with 71% from Jai Durga Senior Secondary School</p>
+                
+             </div>
+
+             <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2023</span>
+                <h3>BCA</h3>
+                <p>Curently i persuing BCA 3rd year From Rajasthan University</p>
+                
+             </div>
+
+            
+        </div>
+
+    </section>
+
+    <section class="contact" id="contact">
+        <h1 class="heading"><span>contact</span> me</h1>
+        <div class="newdiv">
+            
+            <div class="contactrow">
+                <div class="contactcontent">
+                <h1>Contact Info</h1>
+                <h3><i class="fas fa-envelope"></i>xyz123@gmail.com</h3>
+                <h3><i class="fas fa-phone"></i>+91 631235103</h3>
+                <h3><i class="fa-brands fa-linkedin"></i>https://www.linkedin.com/in/xyz-00-2003</h3>
+                <h3><i class="fa-brands fa-github"></i>https://github.com/xyz200</h3>
+                <h3><i class="fas fa-map-marker-alt"></i>Jaipur ,india-302002</h3>
+            </div>
+            
+        </div>
+        <form action="" class="mohit">
+            <input type="text" placeholder="Name" class="box1">
+            <input type="text" placeholder="email" class="box1">
+            <!-- <input type="text" placeholder="project" class="box1"> -->
+            <textarea rows="10" cols="10" id="message"class="box2" placeholder="message"></textarea>
+            <button type="submit" class="btn1" >send <i class="fas fa-paper-plane"></i></button>
+        </form>
+        
+    </div>
+    </section>
+    
+</body>
+</html>
+
+<!-- https://onearchitecture.nl/wp-content/uploads/2021/02/Breuer_Doug_One_Architecture.jpg -->

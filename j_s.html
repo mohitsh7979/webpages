@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="demo"></h1>
+    
+    <script>
+        // let details={
+        //     fname:"mohit",
+        //     lname:"sharma",
+        //     age:18,
+        //     eyecolor:"black",
+        //     full_name:function(){
+        //         return this.fname+" "+this.lname
+
+        //     }
+           
+        // }
+        // document.getElementById("demo").innerHTML=details.full_name()
+        // document.getElementById("demo2").innerHTML=JSON.stringify(details)
+
+        // console.log(details.fname,details.lname,"and his age",details.age,"and his eyes color is",details.eyecolor)
+        // document.getElementById("demo").innerHTML=details.fname+" "+details.lname+" "+"and his age"+" "+details.age+" "+"and his eyes color is"+" "+details.eyecolor;
+        // let text=""
+        // let details = new Object()
+        // details.fname="mohit"
+        // details.age=18
+        // details.eyecolor="black"
+        // delete details.age;
+        // for(let x in details){
+        //     text+=details[x]
+        // }
+        // document.getElementById("demo").innerHTML=text 
+        // let car_details = {
+        //     name: "Mohit",
+        //     age: 18,
+        //     cars: [
+        //         { name: "BMW", models: ["Fiesta", "Focus", "Mustang"] },
+        //         { name: "BMW", models: ["320", "X3", "X5"] },
+        //         { name: "Fiat", models: ["500", "Panda"] }
+
+        //     ]
+        // }
+
+        function person(first,last,age,eye){
+            this.fname=first;
+            this.lname=last;
+            this.age=age;
+            this.eye=eye;
+            this.name=function(){
+                return this.fname+" "+this.lname
+            }
+
+        }
+
+        let mohit=new person("mohit","sharma","18","black")
+        document.getElementById("demo").innerHTML="My Name Is"+ " "+ mohit.name()
+
+    </script>
+
+</body>
+
+</html>

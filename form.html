@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+      .cont{
+             border: 2px solid black;
+             position: absolute;
+             margin-left: 500px;
+             background-color: powderblue;
+      }
+      .a{
+        margin: 4px 4px;
+        padding: 4px 4px;
+        
+      }
+      .b{
+           border-radius: 8px;
+           margin: 4px 4px;
+           padding: 4px 4px ;
+      }
+      .c{
+          margin-left: 70px;
+      }
+      
+      
+
+    </style>
+    <script>
+        function mypsd(){
+            document.getElementById("ab").innerHTML="****Enter your password****"
+        }
+            
+    </script>
+</head>
+<body>
+    <form action="post">
+        <div class="cont">
+        <div class="a">
+            <input type="value" placeholder="Enter Name" class="b">
+        </div>
+        <div class="a">
+            <input type="value" placeholder="Last Name" class="b">
+        </div>
+        <div class="a">
+            <input type="value" placeholder="username" class="b">
+        </div>
+        <div class="a" onclick="func()">
+            <input type="value" placeholder="Email" class="b">
+        </div>
+        <div class="a">
+            <input type="value" placeholder="Password"  class="b" id="ab"  onclick=mypsd()>
+        </div>
+        <div class="c">
+            <button>Submit</button> 
+        </div>
+    </div>
+    </form>
+</body>
+</html>
