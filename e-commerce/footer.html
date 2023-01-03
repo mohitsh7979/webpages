@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .footer {
+            background-color:rgb(50, 48, 48);
+            color: whitesmoke;
+            border: 2px solid black;
+            height: 100%;
+            margin-top:500px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+        }
+
+        .box {
+
+            border: 2px solid whitesmoke;
+            height: 300px;
+            width: 200px;
+            margin-top: 100px;
+            margin-left: 50px;
+            text-align: center;
+        }
+
+        @media (max-width:1386px) {
+            .container {
+
+                display: grid;
+
+                /* background-color: red; */
+            }
+
+            .box{
+                margin-left: 150px;
+                width: 80vw;
+                grid-column-start: 1;
+                grid-column-end: 4;
+            }
+
+        
+        }
+
+      
+
+        #box1{
+            width: 600px;
+        }
+
+        .box ul li{
+            list-style: none;
+            margin-right: 50px;
+            margin-top: 10px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="footer">
+        <div class="container">
+            <div class="box" id="box1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam laborum deleniti architecto iure minima amet itaque adipisci hic temporibus magni, tempora eum. Quam nobis est nesciunt, possimus blanditiis facilis obcaecati asperiores nostrum odio autem molestias reiciendis, dicta odit voluptatum nulla ad dolorum delectus porro esse ratione tenetur rem. Quam, voluptas!
+            </div>
+            <div class="box" id="box2">
+                <h3>Useful link</h3>
+                <ul>
+                    <li>lorem1</li>
+                    <li>lorem2</li>
+                    <li>lorem3</li>
+                    <li>lorem4</li>
+                </ul>
+            </div>
+            <div class="box" id="box3">
+                <h3>follow us</h3>
+                <ul>
+                    <li>lorem1</li>
+                    <li>lorem2</li>
+                    <li>lorem3</li>
+                    <li>lorem4</li>
+                </ul>
+            </div>
+            <div class="box" id="box4">
+                <h3>Section</h3>
+                <ul>
+                    <li>lorem1</li>
+                    <li>lorem2</li>
+                    <li>lorem3</li>
+                    <li>lorem4</li>
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
