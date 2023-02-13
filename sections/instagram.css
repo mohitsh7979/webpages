@@ -1,0 +1,170 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.container {
+
+    display: flex;
+    margin-top: 100px;
+    
+}
+
+.image {
+
+    margin: auto;
+}
+
+.image img {
+
+    height: 350px;
+    margin-left: 200px;
+}
+
+.content{
+
+    margin-right: 250px;
+    width: 25%;
+    font-size: 12px;
+}
+
+.box {
+
+    /* border: 2px solid black; */
+    text-align: center;
+    
+}
+
+.border{
+
+    background-color: rgb(var(--ig-primary-background));
+    border: 1px solid rgb(var(--ig-elevated-separator));
+    border: 2px outset;
+    
+
+}
+
+.logo-image{
+
+    width: 112px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-image{
+
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.form {
+
+    /* border: 2px solid red; */
+    padding: 10px;
+    margin: 10px;
+}
+
+.input {
+
+    padding: 0px;
+    margin: 8px;
+}
+
+.input input {
+
+    padding: 2px;
+}
+
+.input button {
+
+    /* background-color: palevioletred; */
+    border: none;
+    width: 85%;
+    padding: 3px;
+}
+
+.line {
+
+    /* border: 2px solid green; */
+}
+
+.link {
+
+    /* border: 2px solid blueviolet; */
+    padding: 4px;
+}
+
+.link a {
+    text-decoration: none;
+
+}
+
+.link div {
+
+    padding: 5px;
+}
+
+.dont {
+
+    /* border: 2px solid brown; */
+    border: 2px outset;
+    width: 95%;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 5px;
+    
+}
+
+.dont div{
+
+    margin-top: 5px;
+}
+
+.logo {
+
+    display: flex;
+    /* border: 2px solid yellow; */
+    margin: auto;
+    width: 80%;
+}
+
+.login-logo {
+
+
+    width: 100px;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.header {
+
+    border: 2px solid saddlebrown;
+}
+
+.image {
+
+    /* border: 2px solid crimson; */
+}
+
+
+
+.footer div{
+    
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    
+}
+
+.footer{
+
+    margin-top: 20px;
+    color: gray;
+    font-size: 15px;
+}
+
+
+
+/* kine master */

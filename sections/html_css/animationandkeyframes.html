@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+
+            background-color: blueviolet;
+            position: relative;
+            height: 300px;
+            width: 300px;
+            border-radius: 100px;
+            animation-name: Mohit;
+            animation-name: Mohit1;
+            /* define animation name and this name could be anything*/
+            animation-duration: 6s;
+            /* define duration of animation time*/
+            animation-iteration-count: 3;
+            /*/* define iteration*/
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+            /* animation starting slow and ending fast*/
+            animation-timing-function: ease-out;
+            /* animation starting fast and ending slow*/
+            animation-timing-function: ease-in-out;
+            animation-delay: 5s;
+            /* wait for 5s after that it does move*/
+            animation-direction: reverse;
+            /* animation move from reverse side */
+
+        }
+
+        @keyframes Mohit {
+
+            from {
+
+                width: 100px;
+
+            }
+
+            to {
+
+                width: 700px;
+
+            }
+
+        }
+
+        /* @keyframes Mohit1 {
+
+            0%{
+
+                top: 0px;
+                left: 0px;
+
+            }
+
+            25%{
+
+                top: 50px;
+                left: 50px;
+                
+            }
+
+            75%{  
+
+                top: 0px;
+                left: 50px;
+
+            }
+
+            100%{
+
+                top: 250px;
+                left: 0px;
+
+            }
+
+        } */
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>Animation and Keyframes</h1>
+    </center>
+
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

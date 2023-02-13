@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+
+            background-color: black;
+        }
+
+        .container {
+
+            background-color: yellow;
+
+        }
+
+        .box {
+
+            color: red;
+            display: flex;
+            justify-content: center;
+            font-size: 18px;
+            display: none;
+
+
+
+
+        }
+
+
+        @media (max-width:424px) {
+
+            #box-1 {
+
+                display: block;
+                background-color: blue;
+            }
+        }
+
+        @media (min-width:424px) and (max-width:772px){
+
+            #box-2 {
+
+                display: block;
+                background-color: green;
+                color: white;
+            }
+        }
+
+        @media (min-width:772px) and (max-width:950px){
+
+            #box-3 {
+
+                display: block;
+                background-color: palevioletred;
+            }
+        }
+
+        @media (min-width:950px)  and (max-width:1716px){
+
+            #box-4 {
+
+                display: block;
+                background-color: skyblue;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="box" id="box-1">
+            Lorem ipsum dolor sit amet.
+        </div>
+        <div class="box" id="box-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, doloremque.
+        </div>
+        <div class="box" id="box-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quos maiores magni ipsum nulla! Perspiciatis
+            dolor iure ipsum doloremque vel.
+        </div>
+        <div class="box" id="box-4">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, corporis repellendus optio fugit est
+            velit eum at beatae asperiores architecto soluta doloribus esse vero cumque sed enim omnis quam repellat.
+        </div>
+
+    </div>
+
+</body>
+
+</html>

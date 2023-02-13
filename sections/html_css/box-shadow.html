@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+
+            display: flex;
+
+        }
+
+        .box {
+
+            /* border: 2px solid black; */
+            height: 200px;
+            width: 700px;
+            margin: 10px;
+            text-align: center;
+            background-color: gray;
+            box-shadow: 4px 6px  green;   /* shadow in bottom*/
+            box-shadow: -4px -6px  green;  /* shadow in top */
+            box-shadow: 4px 6px  20px green; /* shadow in blur radius*/
+            box-shadow: 4px 6px  20px 20px green; /* sprd radius*/
+            box-shadow: 4px 6px  20px 20px rgba(108, 91, 127, 0.5); /* a means alpha (how musch light and dark) */ 
+            box-shadow: inset 4px 6px  20px 20px green; /* shadow and radious inside*/
+            box-shadow: inset 4px 6px  20px 20px green ,4px 6px  20px 20px yellow; /* box shadow in multiple color*/
+
+       
+
+
+
+        }
+
+        .box p{
+
+            text-shadow: 2px 2px white; /* text shadow */
+            text-shadow: 2px 2px 2px white ; /* text shadow with blur*/
+            text-shadow: 2px 2px 2px white , 2px 2px 2px red; /* text shadow with multiple color */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+
+        <div class="box" id="box-1">
+            <h4>Card</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate velit omnis unde nobis fugiat eius laborum dolore ad magni, repudiandae ipsum optio est illum?</p>
+        </div>
+        <div class="box" id="box-2">
+            <h4>Card</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate velit omnis unde nobis fugiat eius laborum dolore ad magni, repudiandae ipsum optio est illum?</p>
+        </div>
+        <div class="box" id="box-3">
+            <h4>Card</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate velit omnis unde nobis fugiat eius laborum dolore ad magni, repudiandae ipsum optio est illum?</p>
+        </div>
+
+      
+       
+    </div>
+</body>
+
+</html>

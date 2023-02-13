@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+
+            background-color: black;
+        }
+
+        .container{
+
+            display: flex;
+            justify-content: center;
+        }
+        .box{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            width: 200px;
+            background-color: palevioletred;
+            border: 2px solid black;
+            /* transition-property: background-color , height ,width,color,border-radius,font-size;
+            transition-duration: 3s; */
+            /* transition-timing-function: ease-in; */
+            /* transition-timing-function: ease-out; */
+            /* transition-timing-function: ease-in-out; */
+            transition: all 3s ease-in;
+        }
+
+        .box:hover{
+
+            color: red;
+
+            background-color: white;
+            height: 500px;
+            width: 500px;
+            border-radius: 500px;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+               Mohit
+        </div>
+    </div>
+</body>
+</html>

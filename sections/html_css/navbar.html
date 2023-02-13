@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            box-shadow: inset 5px 5px 10px gray;
+            color: white;
+        }
+
+        li {
+            float: left;
+            margin-left: 10px;
+            list-style: none;
+            color: white;
+            text-shadow: 5px 5px 5px gray;
+
+        }
+
+        .img {
+
+            height: 40px;
+            width: 40px;
+            margin-left: 20px;
+            margin-top: 5px;
+        }
+
+        li:hover {
+
+            cursor: pointer;
+            color: white;
+            box-shadow: 5px 5px 10px white;
+        }
+
+        .button {
+
+            margin-top: 10px;
+            margin-right: 20px;
+
+
+        }
+
+        button {
+
+            border-radius: 5px;
+            border: none;
+            background-color: rgb(195, 188, 188);
+            padding: 7px;
+            margin-left: 10px;
+
+        }
+
+        button:hover {
+
+            cursor: pointer;
+            background-color: gray;
+
+        }
+
+        .b {
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            margin-top: 50px;
+            background-color: pink;
+            border-radius: 100px;
+            animation-name: Mohit;
+            animation-duration: 3s;
+            animation-iteration-count: 3; 
+             animation-direction: reverse; 
+
+        }
+
+        @keyframes Mohit{
+
+        from{
+            width: 100px;
+        }
+
+        to{
+
+            width: 1050px;
+        }
+      } 
+
+        /* @keyframes Mohit {
+
+            0% {
+
+                top: 0px;
+                left: 0px;
+
+            }
+
+            25% {
+
+                top: 50px;
+                left: 50px;
+
+            }
+
+            75% {
+
+                top: 0px;
+                left: 50px;
+
+            }
+
+            100% {
+
+                top: 250px;
+                left: 0px;
+
+            }
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="https://www.logologo.com/logos/flower-logo.jpg" alt="" srcset="" class="img">
+        </div>
+        <div class="menu">
+            <ul>
+                <li>Men</li>
+                <li>Women</li>
+                <li>Kids</li>
+                <li>About</li>
+            </ul>
+        </div>
+        <div class="button">
+            <button>Login</button>
+            <button>Sign Up</button>
+        </div>
+    </div>
+
+    <div class="b"></div>
+</body>
+
+</html>
