@@ -10,6 +10,13 @@
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
     <style>
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        
         body {
 
             background-color: rgb(47, 65, 47);
@@ -162,38 +169,7 @@
             <div class="mybox" id="mybox-2">
                 <div class="head"></div>
                 <div class="table">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th scope="col">Name</th>
-                                <th scope="col">Mobile_No</th>
-                                <th scope="col">Whatsapp_No</th>
-                                <th scope="col">Village</th>
-                                <th scope="col">District</th>
-                                <th scope="col">Pin_code</th>
-                                <th scope="col">Delete</th>
-                                <th scope="col">Modifiey</th>
 
-                            </tr>
-                        </thead>
-                        <tbody>
-
-                            {% for i in all %}
-                            <tr>
-
-                                <td>{{ i.Name }}</td>
-                                <td>{{ i.Mobile_No }}</td>
-                                <td>{{ i.Whatsapp_No }}</td>
-                                <td>{{ i.Village }}</td>
-                                <td>{{ i.District }}</td>
-                                <td>{{ i.Pin_code }}</td>
-                                <td><a href="/delete/{{i.id}}/"><i class="fa-solid fa-trash m"></i></a></td>
-                                <td> <a href="/update/{{i.id}}/"><i class="fa-solid fa-pen-to-square m"></i></a></td>
-                            </tr>
-                            {% endfor %}
-
-                        </tbody>
-                    </table>
                 </div>
             </div>
         </div>

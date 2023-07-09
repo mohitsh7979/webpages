@@ -27,21 +27,23 @@
             width: 100px;
             background-color: black;
             color: white;
-            transition-property:background-color,height,width,border-radius;
-            transition-duration: 10s;
-            transition-timing-function: ease-in; /* starting slow end  fast*/
-            transition-timing-function: ease-out; /* starting fast  end slow*/
-            transition-timing-function: ease-in-out;
+         /*  transition-property:background-color,height,width,border-radius; 
+            transition-duration: 2s; 
+            transition-timing-function: ease-out; /* starting slow end  fast*/  /* starting fast  end slow*/
+           /* transition-timing-function: ease-out; 
+            transition-timing-function: ease-in-out; */
+            transition: all 1s ease-in; 
             
         }
 
         .item:hover{
 
-            background-color: white;
+            background-color: green;
             color: black;
             height: 300px;
             width: 300px;
-            border-radius: 100px;
+            border-radius: 1000px;
+            opacity: 0.1;
         }
     </style>
 </head>
@@ -49,7 +51,7 @@
 <body>
     <div class="container">
         <div class="item">
-            <!-- <p> Lorem, ipsum dolor.</p> -->
+        <img src="https://media.istockphoto.com/id/1146517111/photo/taj-mahal-mausoleum-in-agra.jpg?s=612x612&w=0&k=20&c=vcIjhwUrNyjoKbGbAQ5sOcEzDUgOfCsm9ySmJ8gNeRk=" alt="">
         </div>
     </div>
 </body>

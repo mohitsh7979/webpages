@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header{
+
+            height: 20vh;
+            border: 2px solid black;
+            margin: 2px;
+        }
+
+        .container{
+
+            height: 60vh;
+            border: 2px solid red;
+            display: flex;
+            margin: 2px;
+        }
+
+        .slidebar{
+
+            width: 20%;
+            height: 98%;
+            border: 2px solid black;
+            margin: 2px;
+        }
+
+        .items{
+
+            width: 80%;
+            height: 98%;
+            border: 2px solid black;
+            margin: 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer{
+
+            height: 20vh;
+            border: 2px solid black;
+            margin: 2px;
+        }
+
+        .box{
+
+            height: 300px;
+            width: 300px;
+            border: 2px solid black;
+           /* box-shadow: inset 4px 6px  20px 20px black ,inset 4px 6px  100px 20px yellow; */
+            text-shadow: 5px 5px 4px white;
+            color: red;
+
+            margin: 2px;
+            position: absolute;
+        }
+
+        #box-1{
+
+           
+            background-color: brown;
+            z-index: 4;
+            
+           
+
+        }
+
+        #box-2{
+
+           
+            background-color: pink;
+            z-index: 3;
+           
+           
+
+        }
+
+        #box-3{
+
+           
+            background-color: blue;
+            z-index: 2;
+           
+        }
+
+        #box-4{
+            
+            background-color: green;
+            z-index: 1;
+            
+           
+
+        }
+
+     
+    </style>
+</head>
+<body>
+
+    <div class="header"></div>
+    <div class="container">
+        <div class="slidebar"></div>
+        <div class="items">
+            <div class="box" id="box-1"></div>
+            <div class="box" id="box-2"></div>
+            <div class="box" id="box-3"></div>
+            <div class="box" id="box-4"></div>
+        </div>
+    </div>
+
+
+    <div class="footer"></div>
+</body>
+</html>
