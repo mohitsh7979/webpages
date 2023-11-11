@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="resume.css">
+    <style>
+        * {
+
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+        
+            background-color: lightblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .container {
+        
+            position: relative;
+            width: 100%;
+            max-width: 1000px;
+            min-height: 1000px;
+            margin: 50px;
+            background-color: #fff;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            box-shadow: 0 35px 55px rgb(0, 0, 0, 0.1);
+        }
+        
+        .container .left {
+        
+            position: relative;
+            background-color: #003147;
+            padding: 40px;
+        
+        }
+        
+        .container .right {
+            position: relative;
+            background-color: #fff;
+            padding: 40px;
+        
+        }
+        
+        .profiletxt {
+        
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .profiletxt .imbox {
+        
+            position: relative;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        
+        .profiletxt .imbox img {
+        
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            object-fit: cover;
+        
+        }
+        
+        .profiletxt h2 {
+        
+            color: #fff;
+            font-size: 1.5rem;
+            margin-top: 20px;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 600;
+            line-height: 1.4rem;
+        
+        }
+        
+        .profiletxt h2 span {
+        
+            font-size: 0.8em;
+            font-weight: 300;
+        }
+        
+        .contact_info {
+        
+            padding-top: 40px;
+        }
+        
+        .title {
+        
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+        
+        .contact_info ul {
+        
+            position: relative;
+        
+        }
+        
+        .contact_info ul li {
+        
+            position: relative;
+            list-style: none;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+        
+        .contact_info ul li .icon {
+        
+            display: inline-block;
+            width: 30px;
+            font-size: 18px;
+            color: #03a9f4;
+        
+        }
+        
+        .contact_info ul li span {
+        
+            color: #fff;
+            font-weight: 300px;
+        }
+        
+        .contact_info.education li{
+        
+            margin-bottom: 15px;
+        }
+        
+        .contact_info.education h5{
+        
+            color: #03a9f4;
+            font-weight: 500px;
+        
+        }
+        
+        .contact_info.education h4:nth-child(2){
+        
+          color: #fff;
+          font-weight: 500px;
+        
+        }
+        
+        .contact_info.education h4{
+        
+            color: #fff;
+            font-weight: 300px;
+        
+        }
+        
+        .contact_info.language .percent{
+            
+            position: relative;
+            width: 100%;
+            height: 6px;
+            background:#081921;
+            display: block;
+        }
+        
+        .contact_info.language .percent div{
+        
+            position: absolute;
+            top:0;
+            left:0;
+            height: 100%;
+            background: #03a9f4;
+        
+        }
+        
+        
+        .about{
+        
+            margin-bottom: 50px;
+        }
+        
+        .about:last-child{
+        
+            margin-bottom: 0;
+        }
+        
+        .title2{
+        
+            color: #003147;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+        
+        p{
+            color: #333;
+            text-align: justify;
+        }
+        
+        .about .box{
+        
+            display: flex;
+            flex-direction: row;
+            margin: 20px 0;
+        }
+        
+        .about .box .year_company{
+        
+            min-width: 150px;
+        }
+        
+        .about .box .year_company h5{
+        
+            text-transform: uppercase;
+            color: #848c90;
+            font-weight: 600;
+        }
+        
+        .about .box .text h4{
+        
+            text-transform: uppercase;
+            color: #2a7da2;
+            font-size: 16px;
+        }
+        
+        .skills .box{
+        
+            position: relative;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .skills .box h4{
+        
+            text-transform: uppercase;
+            color: #848c99;
+        }
+        
+        .skills .box .percent{
+        
+            position: relative;
+            width: 100%;
+            height: 10px;
+            background-color: #f0f0f0;
+        }
+        
+        .skills .box .percent div{
+        
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background-color: #03a9f4;
+        
+        
+        }
+        
+        .interest ul{
+        
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            margin: 0 20px;
+        }
+        
+        .interest ul li{
+        
+          
+            color: #333;
+            font-weight: 500;
+            margin: 10px 0;
+        }
+        
+        @media (max-width:900px){
+        
+            .container{
+        
+                margin: 10px;
+                display: block;
+            }
+        
+            .interest ul{
+        
+                display: block;
+            }
+        }
+        
+        @media (max-width:400px){
+        
+            .about .box{
+        
+                flex-direction: column;
+            }
+        
+            .about .box .year_company{
+        
+                min-width: 150px;
+                margin-bottom: 5px;
+            }
+        
+            .interest ul{
+        
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="left">
+            <div class="profiletxt">
+                <div class="imbox">
+                    <img src="https://pps.whatsapp.net/v/t61.24694-24/362282419_3240847556213269_4491454263409477096_n.jpg?ccb=11-4&oh=01_AdSV7kBOZZByYe4fFVM_qsN7nQXay_qM0bHXI0IS7DsuuQ&oe=650A8820&_nc_sid=000000&_nc_cat=104"
+                        alt="" width="100%" height="100%">
+                </div>
+                <h2>Mohit Sharma<br> <br><span>Django Developer</span></h2>
+            </div>
+
+            <div class="contact_info">
+                <h3 class="title">Contact Info</h3>
+                <ul>
+                    <li>
+                        <span class="icon"><i class="fa-solid fa-phone"></i></span>
+                        <span class="text">+91 6367790103</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa-regular fa-envelope"></i></span>
+                        <span class="text">mohitsh7979@gmail.com</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa-solid fa-globe"></i></span>
+                        <span class="text">www.mywebsite.com</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa-brands fa-linkedin"></i></span>
+                        <span class="text">www.linkdin.com/me</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
+                        <span class="text">Jaipur , Rajasthan</span>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="contact_info education">
+                <h3 class="title">Education</h3>
+                <ul>
+                    <li>
+
+                        <h5>2020 - 2023</h5>
+                        <h4>Bca</h4>
+                        <h4>Rajsathan University</h4>
+
+                    </li>
+                    <li>
+
+                        <h5>2020</h5>
+                        <h4>12th</h4>
+                        <h4>Jai Duraga Sr. Sec. School</h4>
+
+                    </li>
+                    <li>
+
+                        <h5>2018</h5>
+                        <h4>10th</h4>
+                        <h4>Jai Duraga Sr. Sec. School</h4>
+
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="contact_info language">
+                <h3 class="title">Languages</h3>
+                <ul>
+                    <li>
+                        <span class="text">English</span>
+                        <div class="percent">
+                            <div style="width:90%"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="text">Spanish</span>
+                        <div class="percent">
+                            <div style="width:48%"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="text">Hindi</span>
+                        <div class="percent">
+                            <div style="width:70%"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+            <div class="about">
+                <h2 class="title2">Profile</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti rem est obcaecati laudantium saepe quasi et labore iusto doloremque minima aperiam adipisci fugiat accusantium cumque corporis delectus expedita odit culpa, quod quo eveniet molestias consectetur ipsa earum! Hic, ipsum? Officia, eum cumque totam eveniet in distinctio dolor, quaerat aliquid provident corrupti facilis iusto nobis odio? <br> <br> Cum, ut ab suscipit facilis provident voluptate ducimus laboriosam ratione corporis soluta at, asperiores libero blanditiis fugiat, harum dolore earum enim beatae nemo eligendi quasi. Velit a eaque quas veniam sed. Non autem perferendis, velit voluptate veritatis quo eum odio dicta recusandae distinctio, voluptas omnis?</p>
+            </div>
+
+            <div class="about">
+                <h2 class="title2">Experience</h2>
+                <div class="box">
+                    <div class="year_company">
+                        <h5>2019 - Present</h5>
+                        <h5>Company Name</h5>
+                    </div>
+                    <div class="text">
+                        <h4>Django Developer</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, doloribus? Necessitatibus saepe debitis vitae aut itaque beatae officiis ipsum asperiores.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="year_company">
+                        <h5>2019 - Present</h5>
+                        <h5>Company Name</h5>
+                    </div>
+                    <div class="text">
+                        <h4>Django Developer</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, doloribus? Necessitatibus saepe debitis vitae aut itaque beatae officiis ipsum asperiores.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about skills">
+                <h2 class="title2">Professional Skills</h2>
+                <div class="box">
+                    <h4>Html</h4>
+                    <div class="percent"><div style="width:95%"></div></div>
+                </div>
+                <div class="box">
+                    <h4>Css</h4>
+                    <div class="percent"><div style="width:95%"></div></div>
+                </div>
+                <div class="box">
+                    <h4>Java Script</h4>
+                    <div class="percent"><div style="width:65%"></div></div>
+                </div>
+                <div class="box">
+                    <h4>Bootstrap</h4>
+                    <div class="percent"><div style="width:60%"></div></div>
+                </div>
+                <div class="box">
+                    <h4>Python</h4>
+                    <div class="percent"><div style="width:60%"></div></div>
+                </div>
+                <div class="box">
+                    <h4>Django</h4>
+                    <div class="percent"><div style="width:60%"></div></div>
+                </div>
+                
+
+            </div>
+
+            <div class="about interest">
+                <div class="title2">Interest</div>
+                <ul>
+                    <li>Gaming</li>
+                    <li>Codeing</li>
+                    <li>Panting</li>
+                    <li>Singing</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
